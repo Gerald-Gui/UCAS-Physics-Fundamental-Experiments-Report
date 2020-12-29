@@ -718,7 +718,7 @@
 	固定探测线圈法线方向和圆电流轴线$ D $的夹角为$ 0^\circ $，转动探测线圈径向移动手轮，每隔5\,mm测量一个数据，按正负方向测到边缘，记录数据并作出磁场分布曲线图。
 	\subsection{验证公式$ \varepsilon_\max=NS\omega B_\max\cos\theta $}
 	当$ NS\omega B_\max $不变时，$ \varepsilon_\max $与$ \cos\theta $成正比。根据实验要求，将探测线圈沿轴线固定在某一位置上，让探测线圈法线方向与圆电流轴线的夹角从$ 0^\circ $开始，逐步转移到$ 90^\circ,\;180^\circ,\;270^\circ $，再回到$ 0^\circ $，每改变$ 10^\circ $测量一组数据。
-	\subsection{励磁电流大小对磁场强度的影响}
+	\subsection{励磁电流频率大小对磁场强度的影响}
 	将探测线圈固定在亥姆霍兹线圈中心点，其法线方向与圆电流轴线$ D $夹角为$ 0^\circ $，并保持不变。调节磁场测试仪输出电流频率，在$ 20\sim 130\,\mathrm{Hz} $范围内，每次频率改变$ 10\,\mathrm{Hz} $，逐次测量感应电动势的数值并记录。
 	
 	\section{实验结果与数据记录}
@@ -928,8 +928,7 @@
 		\caption{验证$ U\propto\cos\theta $}
 	\end{figure}
 	
-	\subsection{励磁电流大小对磁场强度的影响}
-	实验数据记录如下：
+	\subsection{励磁电流频率大小对磁场强度的影响}
 	\begin{table}[!h]
 		\centering
 		\renewcommand\arraystretch{1.5}
@@ -1006,6 +1005,7 @@
 				};
 			\end{axis}
 		\end{tikzpicture}
+		\captionsetup{skip=0pt}
 		\caption{$ B-f $拟合图象}
 	\end{figure}
 	
@@ -1027,7 +1027,7 @@
 	
 	已知：
 	\begin{align*}
-		K_H=16.43\,\mathrm{V/(A\cdot T)}\quad & \quad\sigma_{K_H}=0.071\,\mathrm{V/(A\cdot T)}\\
+		K_H=16.43\,\mathrm{V/(A\cdot T)}\quad & \quad\sigma_{K_H}=0.0822\,\mathrm{V/(A\cdot T)}\\
 		I_H=0.01\,\mathrm{A}\quad & \quad\sigma_{I_H}=1\times10^{-5}\,\mathrm{A}\\
 		U_H=0.02785\,\mathrm{V}\quad & \quad\sigma_{U_H}=1\times10^{-4}\,\mathrm A
 	\end{align*}
@@ -1035,7 +1035,7 @@
 	\begin{align*}
 		\sigma_B & =\sqrt{\left(\frac{\mpar B}{\mpar K_H}\sigma_{K_H}\right)^2+\left(\frac{\mpar B}{\mpar I_H}\sigma_{I_H}\right)^2+\left(\frac{\mpar B}{\mpar U_H}\sigma_{U_H}\right)^2}\\
 		& =\sqrt{(I_HU_H\sigma_{K_H})^2+(U_HK_H\sigma_{I_H})^2+(I_HK_H\sigma_{U_H})^2}\\
-		& =0.0261\,\mathrm{mT}
+		& =0.0285\,\mathrm{mT}
 \end{align*}}
 
 	\textbf{2.以简图示意，用霍尔效应法判断霍尔片上的磁场方向。}
